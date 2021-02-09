@@ -34,22 +34,25 @@ video,
 input {
 
 }
+video, input {
+    display: block;
+}
 
 input {
-  width: 100%;
+    width: 100%;       
 }
 
 .info {
-  background-color: aqua;
+    background-color: aqua;            
 }
 
 .error {
-  background-color: red;
-  color: white;
+    background-color: red;
+    color: white;
 }
-</style>
 
+</style>
 <h1>HTML5 local video file player example</h1>
 <div id="message"></div>
-<input type="file" accept="video/*" />
+<input type="file" accept="video/*"/>
 <video controls autoplay></video>
